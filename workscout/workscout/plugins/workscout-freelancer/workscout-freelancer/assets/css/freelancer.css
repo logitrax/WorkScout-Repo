@@ -1,0 +1,318 @@
+
+.project-discussion-content,
+.project-view-content {
+    padding: 20px 35px;
+}
+
+
+/* Project Comments Styles */
+.project-comment-form {
+    margin-top: 30px;
+    padding: 25px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.project-comment-form textarea {
+    min-height: 120px;
+}
+
+.milestone-comment {
+    background: #f0f7ff;
+    border-left: 4px solid #2a41e8;
+}
+
+.milestone-header {
+    margin-bottom: 10px;
+}
+
+.milestone-tag {
+    background: #2a41e8;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.milestone-status {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.project-view-content ul { list-style: none; }
+
+.milestone-status.pending {
+    color: #ffa700;
+}
+
+.milestone-status.completed {
+    color: #40b660;
+}
+
+.project-comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-comment-list .project_comment {
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 0 0 10px 0;
+}
+li.project_comment.comment,
+li.project_comment.comment p{
+    font-size: 14px;
+}
+
+.project-comment-content p { margin: 0; }
+
+
+.project-comment-content {
+border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.project-comment-attachments {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+}
+
+.project-comment-attachments h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.project-comment-attachments ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-comment-attachments li {
+    margin-bottom: 5px;
+}
+
+.project-comment-attachments a {
+    color: #2a41e8;
+    text-decoration: none;
+}
+
+.project-comment-attachments a:hover {
+    text-decoration: underline;
+}
+
+.milestone-approvals {
+    margin-top: 15px;
+
+  
+}
+.milestones-action,
+.project-task-files,
+.project-files,
+.milestones-list {
+    padding: 20px 35px;
+}
+
+.milestones-action { border-top: 1px solid #e0e0e0 }
+.approval-status {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.approval-status span {
+    padding: 2px 10px;
+    border-radius: 4px;
+    background: #f0f0f0;
+    font-size: 13px;
+}
+
+.milestone-item h4 {font-size: 16px;}
+
+.approval-status span.approved {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.milestone-actions {
+    margin-top: 10px;
+}
+
+.percentage-input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.percentage-symbol {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.amount-preview {
+    margin-top: 5px;
+    color: #666;
+}
+
+.project-info {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+.project-view-details {
+
+   
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 23px;
+    margin-top: 5px;
+}
+
+.project-view-details .bid-proposal-text {
+    margin: 0;
+}
+
+.milestone-item .badge {
+    font-size: 12px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    color: #808080;
+    padding: 0 5px;
+    display: inline-block;
+    line-height: 22px;
+    margin-left: 5px;
+    top: -2px;
+    position: relative
+    
+}
+
+.milestone-meta {
+        border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.approve-milestone.button {
+    padding: 0 13px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.approve-milestone.button[disabled] {
+    background: #e0e0e0;
+    color: #808080;
+    cursor: default;
+}
+
+.project-view-description .single-page-section { margin-bottom: 10px; }
+
+body .freelancer-overview.project-view {
+    padding: 20px 35px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+body .freelancer-overview.project-view .freelancer-name { margin-left: 18px; }
+.freelancer-overview.project-view .freelancer-name h4, 
+.freelancer-overview.project-view .freelancer-name h4 a {
+    margin-bottom: 0;
+}
+
+
+
+.milestone-item {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.milestone-item:last-child {
+    border-bottom: none;
+    margin-bottom: 20;
+    padding-bottom: 0;
+}
+
+#edit-milestone-popup.small-dialog { padding: 0px;}
+.mfp-content #edit-milestone-popup.small-dialog  .mfp-close{ top: 9px;}
+
+#milestone-form .slider.slider-horizontal {
+    min-width: 250px;
+}
+
+
+@property --progress-value {
+    syntax: '<integer>';
+    inherits: true;
+    initial-value: 0;
+}
+
+:root {
+    --progress-bar-color: #cfd8dc;
+    --progress-value-color: #2196f3;
+    --progress-empty-color-h: 4.1;
+    --progress-empty-color-s: 89.6;
+    --progress-empty-color-l: 58.4;
+    --progress-filled-color-h: 122.4;
+    --progress-filled-color-s: 39.4;
+    --progress-filled-color-l: 49.2;
+}
+
+
+progress[value] {
+    display: block;
+    position: relative;
+    appearance: none;
+    width: 80%;
+    height: 6px;
+    border: 0;
+    --border-radius: 10px;
+    border-radius: var(--border-radius);
+    counter-reset: progress var(--progress-value);
+    --progress-value-string: counter(progress) '%';
+    --progress-max-decimal: calc(var(--value, 0) / var(--max, 0));
+    --progress-value-decimal: calc(var(--progress-value, 0) / var(--max, 0));
+
+    @supports selector(::-moz-progress-bar) {
+        --progress-value-decimal: calc(var(--value, 0) / var(--max, 0));
+    }
+
+    --progress-value-percent: calc(var(--progress-value-decimal) * 100%);
+    --progress-value-color: hsl(calc((var(--progress-empty-color-h) + (var(--progress-filled-color-h) - var(--progress-empty-color-h)) * var(--progress-value-decimal)) * 1deg) calc((var(--progress-empty-color-s) + (var(--progress-filled-color-s) - var(--progress-empty-color-s)) * var(--progress-value-decimal)) * 1%) calc((var(--progress-empty-color-l) + (var(--progress-filled-color-l) - var(--progress-empty-color-l)) * var(--progress-value-decimal)) * 1%));
+    animation: calc(3s * var(--progress-max-decimal)) linear 0.5s 1 normal both progress;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: var(--progress-bar-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+progress[value]::-webkit-progress-value {
+    width: var(--progress-value-percent) !important;
+    background-color: var(--progress-value-color);
+    border-radius: var(--border-radius);
+}
+
+progress[value]::-moz-progress-bar {
+    width: var(--progress-value-percent) !important;
+    background-color: var(--progress-value-color);
+    border-radius: var(--border-radius);
+}
+
+@keyframes progress {
+    from {
+        --progress-value: 0;
+    }
+
+    to {
+        --progress-value: var(--value);
+    }
+}
